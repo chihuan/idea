@@ -27,3 +27,10 @@ var _hmt = _hmt || [];
 
 <script src="rs/bootstrap/js/jquery-1.11.1.min.js"></script>
 <script src="rs/bootstrap/js/bootstrap.min.js"></script>
+<script>
+var token = $("meta[name='_csrf']").attr("content");
+var header = $("meta[name='_csrf_header']").attr("content");
+$(document).ajaxSend(function(e, xhr, options) {
+	xhr.setRequestHeader(header, token);
+});
+</script>

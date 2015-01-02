@@ -4,14 +4,6 @@ $(function() {
 	$("#login").click(function(){
 		login();
 	});
-	
-	// Include CSRF token as header in JQuery AJAX requests
-	// See http://docs.spring.io/spring-security/site/docs/3.2.x/reference/htmlsingle/#csrf-include-csrf-token-ajax
-	var token = $("meta[name='_csrf']").attr("content");
-	var header = $("meta[name='_csrf_header']").attr("content");
-	$(document).ajaxSend(function(e, xhr, options) {
-		xhr.setRequestHeader(header, token);
-	});
 });
 
 function startTime() {
