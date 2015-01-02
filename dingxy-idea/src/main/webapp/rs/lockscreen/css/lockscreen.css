@@ -3,12 +3,11 @@
 */
 /* ADD THIS CLASS TO THE <HTML> TAG */
 .lockscreen {
-	background: url(../img/blur-background09.jpg) repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background-color: #3A9AC4;
+  	background-image: -webkit-linear-gradient(top, #4BAAD3, #3A9AC4); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  	background-image:         linear-gradient(to bottom, #4BAAD3, #3A9AC4); /* Chrome 26, Firefox 16+, IE 10+, Opera */
 }
+
 /* Remove the background from the body element */
 .lockscreen>body {
 	background: transparent;
