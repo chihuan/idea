@@ -17,6 +17,24 @@
 <![endif]-->
 
 <link rel="stylesheet" href="rs/lockscreen/css/lockscreen.css">
+<style type="text/css">
+.center {
+	width: 600px;
+	height: 275px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -188px;
+	margin-left: -300px;
+}
+
+@media screen and (max-width: 480px) {
+	.center {
+		width: 480px;
+		margin-left: -240px;
+	}
+}
+</style>
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -28,8 +46,7 @@ var _hmt = _hmt || [];
 </script>
 </head>
 <body>
-	<div class="center"
-		style="width: 600px; height: 275px; position: absolute; top: 50%; left: 50%; height: 50%; margin-top: -188px; margin-left: -300px;">
+	<div class="center" >
 		<div id="time" class="headline text-center">10:00:04 PM</div>
 
 		<div class="lockscreen-name">丁小样</div>
