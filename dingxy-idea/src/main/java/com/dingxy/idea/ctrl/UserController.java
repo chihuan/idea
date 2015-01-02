@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * 会员
+ * 会员Controller
  * 
  * @author craneding
  * @date 2015年1月2日 上午12:18:14
@@ -25,9 +25,10 @@ public class UserController {
 
 	@RequestMapping(value = "login", method = RequestMethod.POST)
 	@ResponseBody
-	public String login(String userName, String passwd) throws UnsupportedEncodingException {
+	public String login(String userName, String passwd)
+			throws UnsupportedEncodingException {
 		LOGGER.info("userName：{} passwd：{}", userName, passwd);
-		
+
 		return ("丁小样".equals(userName) && "654321".equals(passwd)) ? "OK" : "用户名密码错误！";
 	}
 

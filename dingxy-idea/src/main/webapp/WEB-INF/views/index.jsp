@@ -1,12 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" isErrorPage="true"%>
+
 <!DOCTYPE html>
 <html lang="zh-CN" class="lockscreen">
 <head>
-<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no">
 <meta content="yes" name="apple-mobile-web-app-capable">
 <meta name="format-detection" content="telephone=no">
 <meta name="format-detection" content="email=no">
+
+<meta name="_csrf" content="${_csrf.token}"/>
+<meta name="_csrf_header" content="${_csrf.headerName}"/>
+	
 <title>丁小样软件工作室</title>
 
 <link href="rs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
