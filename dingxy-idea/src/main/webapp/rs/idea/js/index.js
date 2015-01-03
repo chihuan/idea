@@ -36,5 +36,7 @@ function checkTime(i) {
 function login() {
 	$.post('user/login', {userName: '丁小样', passwd: $("#passwd").val()}, function(data){
 		alert(data);
+	}).error(function(xhr){
+		alert(xhr.responseText);
 	});
 }
